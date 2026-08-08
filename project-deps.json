@@ -3,7 +3,7 @@
   "DirectDependencies": {
     "RedCore": {
       "Source": "Zenith-Team/RedCore",
-      "Version": "^1.0.2",
+      "Version": "1.0.2",
       "Dependencies": {
         "Telkin": {
           "Source": "Zenith-Team/Telkin",
