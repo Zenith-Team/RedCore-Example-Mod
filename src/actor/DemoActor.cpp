@@ -6,6 +6,8 @@
 namespace example {
 
 class DemoActor : public Actor {
+    SEAD_RTTI_OVERRIDE(DemoActor, Actor)
+
 public:
     static Profile* sProfile;
 
@@ -20,6 +22,8 @@ public:
 private:
     AnimModel* mModel;
 };
+
+SEAD_RTTI_OVERRIDE_IMPL(DemoActor, Actor)
 
 Profile* DemoActor::sProfile = example::getRegistrar()->newProfile<DemoActor>("demo")
     .resources<"star_coin">(ProfileInfo::cResType_Course)
